@@ -1,7 +1,7 @@
 Morris-python
 =============
 
-This package implements the test function of Morris as presented in *Factorial Sampling Plans for Preliminary Computational Experiments*. This function is commonly used to test algorithms that seek to identify subsets of parameters that are the most important contributors to total model variation. If you want to know more, I refer you to the classical original paper from 1991.
+This package implements the test function of Morris as presented in *Factorial Sampling Plans for Preliminary Computational Experiments*. This function is commonly used to test algorithms that seek to identify subsets of parameters that are the most important contributors to total model variation. If you want to know more, I refer you to the classic original paper from 1991.
 
 It can be difficult to implement this function efficiently in pure Python or NumPy, thus this code mixes Fortran and Python for maximum speed.
 
