@@ -25,7 +25,7 @@ You need to build the Fortran module using f2py:
 
 > <code>f2py -c morris.pyf morris.f95</code>
 
-This will output morris_test.so, which is the Fortran code build into a Python module. Copy this and morris.py into your directory.
+This will output morris_test.so, which is the Fortran code built into a Python module. Copy this and morris.py into your directory.
 
 morris.py is a convenient interface for the Fortran code and contains all of the initialization code. I do not recommend using the Fortran module directly unless you know what you are doing. Calling is simple:
 
