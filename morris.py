@@ -24,7 +24,7 @@ for i in xrange(4):
     for j in xrange(4):
         for k in xrange(4):
             for l in xrange(4):
-                b4[i, j, k, l] - 5.
+                b4[i, j, k, l] = 5.
 
 b1 = b1.copy('f')
 b2 = b2.copy('f')
