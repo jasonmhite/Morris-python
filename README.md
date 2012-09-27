@@ -12,8 +12,8 @@ To compile you will need:
 
 * Python (tested on 2.7.3)
 * NumPy
-* SciPy 
-* A Fortran 95 compiler (tested with gfortran)
+* SciPy 
+* A Fortran 95 compiler (tested with gFortran)
 
 You need to build the Fortran module using f2py:
 
@@ -25,10 +25,12 @@ You need to build the Fortran module using f2py:
 
     f2py -c morris.pyf morris.f95
 
-This will output morris_test.so, which is the Fortran code built into a Python module. Copy this and morris.py into your directory.
+This will output morris_test.so, which is the Fortran code built into a Python module. Copy this and morris.py into your directory. If you use something other than gFortran you will need to configure it to work with SciPy.
 
 morris.py is a convenient interface for the Fortran code and contains all of the initialization code. I do not recommend using the Fortran module directly unless you know what you are doing. Calling is simple:
 
-    from morris import morris
-    import numpy as np 
-    print morris(np.ones(20))
+````python
+from morris import morris
+import numpy as np 
+print morris(np.ones(20))
+````
