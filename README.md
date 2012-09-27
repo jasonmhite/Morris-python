@@ -19,18 +19,16 @@ You need to build the Fortran module using f2py:
 
 *Build function signatures*
 
-> <code>f2py -m morris_test -h morris.pyf morris.f95 --overwrite-signature</code>
+    f2py -m morris_test -h morris.pyf morris.f95 --overwrite-signature
 
 *Compile*
 
-> <code>f2py -c morris.pyf morris.f95</code>
+    f2py -c morris.pyf morris.f95
 
 This will output morris_test.so, which is the Fortran code built into a Python module. Copy this and morris.py into your directory.
 
 morris.py is a convenient interface for the Fortran code and contains all of the initialization code. I do not recommend using the Fortran module directly unless you know what you are doing. Calling is simple:
 
-> <code> from morris import morris</code>
->
-> <code> import numpy as np</code>
-> 
-> <code> print morris(np.ones(20))
+    from morris import morris
+    import numpy as np 
+    print morris(np.ones(20))
