@@ -34,3 +34,8 @@ from morris import morris
 import numpy as np 
 print morris(np.ones(20))
 ````
+
+Notes
+-----
+
+This is probably not the most efficient implementation possible. It's *fast enough* for my purposes, so take it for what it's worth.
